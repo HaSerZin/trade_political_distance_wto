@@ -1,0 +1,49 @@
+﻿# ==============================================================================
+# MASTER CONFIGURATION FILE FOR REPLICATION OF HARDWICK (2025)
+# ==============================================================================
+# This file contains all necessary inputs for the study's replication script.
+# It is designed to be the single configuration source, loaded at runtime.
+# ==============================================================================
+
+parameters:
+  # --------------------------------------------------------------------------
+  # I. Particle Filter Parameters
+  # Source: Appendix A.1, page 27
+  # --------------------------------------------------------------------------
+  particle_filter_params:
+    M_particles: 1000
+    observation_variance_function: "lambda n_ijt: 1 / (n_ijt + 1)"
+    process_variance_estimation: "Residual variance of AR(1) fit to y_ijt series"
+    process_variance_floor: 1.0e-6
+    process_variance_default: 0.001
+    baseline_min_obs_threshold: 270
+    robustness_min_obs_threshold: 324
+
+  # --------------------------------------------------------------------------
+  # II. Econometric Estimation Parameters
+  # Source: Section 3
+  # --------------------------------------------------------------------------
+  estimation_params:
+    primary_estimator: "PPML"
+    extensive_margin_estimator: "Logit"
+    fixed_effects_structure:
+      - "ExporterISO + Year"
+      - "ImporterISO + Year"
+      - "ExporterISO + ImporterISO"
+      - "Border + Year"
+    ppml_se_method: "Clustered by ExporterISO-ImporterISO pair"
+    logit_se_method: "Split-panel jackknife with bootstrap"
+    bootstrap_replications: 1000
+
+  # --------------------------------------------------------------------------
+  # III. Robustness Check Parameters
+  # Source: Appendix Tables A4, A10
+  # --------------------------------------------------------------------------
+  robustness_check_params:
+    democratic_pair_definition: "Polity_i > 6 and Polity_j > 6"
+    pd_trimming_rule: "Drop top and bottom 1% of the PD distribution"
+    alternative_governance_vars:
+      - "WGI_Voice_and_Accountability"
+      - "WGI_Rule_of_Law"
+    temporal_aggregation_robustness_frequency: "Quarterly"
+    first_month_gdelt_measure: "Use GDELT index value from only the first month of each quarter"
