@@ -1,0 +1,123 @@
+﻿# ==============================================================================
+# PRODUCTION REQUIREMENTS FOR QUANTITATIVE GEOPOLITICAL RISK MODEL
+# ==============================================================================
+#
+# A Quantitative Framework for Modeling the Impact of Political Distance on
+# International Trade and the Mitigating Role of the World Trade Organization
+#
+# This requirements file specifies exact versions for critical econometric
+# libraries to ensure reproducibility of quantitative results, while using
+# compatible version ranges for stable dependencies.
+#
+# Compatible with Python 3.9+ (recommended: Python 3.10 or 3.11)
+# ==============================================================================
+
+# ==============================================================================
+# CORE SCIENTIFIC COMPUTING STACK
+# ==============================================================================
+# NumPy: Fundamental numerical computing - pinned for reproducible linear algebra
+numpy==1.24.4
+
+# Pandas: Data manipulation and analysis - compatible version for stability
+pandas>=2.0.0,<2.2.0
+
+# SciPy: Scientific computing algorithms - compatible version
+scipy>=1.10.0,<1.12.0
+
+# ==============================================================================
+# ECONOMETRIC AND STATISTICAL LIBRARIES
+# ==============================================================================
+# PyFixest: High-performance fixed effects estimation (CRITICAL for gravity models)
+# Pinned version for exact replication of PPML and high-dimensional FE results
+pyfixest==0.20.0
+
+# Statsmodels: Statistical modeling and econometric analysis
+# Pinned for exact replication of AR models and diagnostic tests
+statsmodels==0.14.0
+
+# ==============================================================================
+# DATA VALIDATION AND CONFIGURATION
+# ==============================================================================
+# Pydantic: Data validation using Python type annotations
+# V2 for enhanced performance and features
+pydantic>=2.0.0,<3.0.0
+
+# ==============================================================================
+# VISUALIZATION AND REPORTING
+# ==============================================================================
+# Matplotlib: Publication-quality plotting - compatible version
+matplotlib>=3.6.0,<4.0.0
+
+# Seaborn: Statistical data visualization - compatible version  
+seaborn>=0.12.0,<0.14.0
+
+# Modelsummary: Econometric model output formatting
+# Pinned version for consistent table generation
+modelsummary==0.0.10
+
+# ==============================================================================
+# PARALLEL PROCESSING AND PERFORMANCE
+# ==============================================================================
+# Joblib: Embarrassingly parallel computing - compatible version
+joblib>=1.2.0,<1.4.0
+
+# Tqdm: Progress bars for long-running computations
+tqdm>=4.64.0,<5.0.0
+
+# ==============================================================================
+# DEVELOPMENT AND TESTING DEPENDENCIES (Optional - uncomment if needed)
+# ==============================================================================
+# pytest>=7.0.0,<8.0.0
+# pytest-cov>=4.0.0,<5.0.0
+# black>=23.0.0,<24.0.0
+# flake8>=6.0.0,<7.0.0
+# mypy>=1.0.0,<2.0.0
+
+# ==============================================================================
+# PLATFORM-SPECIFIC CONSIDERATIONS
+# ==============================================================================
+# Note: This requirements file assumes a Unix-like environment (Linux/macOS)
+# For Windows deployment, consider:
+# - Using conda instead of pip for scipy/numpy (better BLAS/LAPACK integration)
+# - Adding pywin32 if Windows-specific functionality is needed
+# - Testing memory allocation patterns for large panel datasets
+
+# ==============================================================================
+# INSTALLATION NOTES
+# ==============================================================================
+# 1. Install in a clean virtual environment:
+#    python -m venv geopolitical_risk_env
+#    source geopolitical_risk_env/bin/activate  # Linux/macOS
+#    # geopolitical_risk_env\Scripts\activate   # Windows
+#
+# 2. Upgrade pip before installation:
+#    python -m pip install --upgrade pip
+#
+# 3. Install requirements:
+#    pip install -r requirements.txt
+#
+# 4. For GPU acceleration (optional, for large-scale Monte Carlo):
+#    pip install cupy-cuda11x  # Adjust CUDA version as needed
+#
+# 5. Verify installation by running:
+#    python -c "import pyfixest, statsmodels, numpy, pandas; print('Dependencies OK')"
+#
+# ==============================================================================
+# KNOWN COMPATIBILITY ISSUES AND RESOLUTIONS
+# ==============================================================================
+# 
+# Issue 1: PyFixest requires specific NumPy version alignment
+# Resolution: NumPy 1.24.4 tested compatible with PyFixest 0.20.0
+#
+# Issue 2: Statsmodels may issue ConvergenceWarnings with certain datasets
+# Resolution: Warnings are imported and handled in the main module
+#
+# Issue 3: Modelsummary has limited recent updates
+# Resolution: Pinned to last stable version 0.0.10, consider migration to
+# stargazer or custom LaTeX generation for long-term maintenance
+#
+# Issue 4: Large panel datasets may exceed memory limits
+# Resolution: Consider chunked processing or upgrading to 64GB+ RAM systems
+# for datasets exceeding 10M observations
+#
+# ==============================================================================
